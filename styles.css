@@ -1,0 +1,15 @@
+header {
+    background-image: linear-gradient(160deg, #6699ff, #7300e6);
+}
+img {
+    display: grid;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    border: 10px;
+    border-color: black;
+}
+h1 {
+    text-align: center;
+}
