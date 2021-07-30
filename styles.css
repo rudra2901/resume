@@ -1,15 +1,121 @@
-header {
-    background-image: linear-gradient(160deg, #6699ff, #7300e6);
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:wght@500&family=Open+Sans+Condensed:wght@300&display=swap');
+
+#navBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 2px 2px;
+    margin-left: 5vw;
+    align-self: center;
+    height: fit-content;
+    width: 90vw;
+    border: none;
+    border-radius: 70px;
 }
-img {
-    display: grid;
-    height: 200px;
-    width: 200px;
+@media (max-width: 700px) {
+    #navBar {
+        display: none;
+        position: absolute;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 2px 2px;
+        margin-top: 10px;
+        margin-left: 5vw;
+        align-self: center;
+        height: fit-content;
+        width: 90vw;
+        border: none;
+        border-radius: 70px;
+    }
+}
+.logo {
+    margin-right: auto;
+    padding-left: 20px;
+}
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgba(21, 178, 218, 0.5);
+    padding: 0px 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s; 
+}
+button:hover {
+    background-color: rgba(21, 178, 218, 1);
+}
+#lastButton {
+    margin-right: 3px;
+}
+
+#profile {
+    height: 40vh;
+    width: 40vh;
     border-radius: 50%;
-    margin: auto;
     border: 10px;
     border-color: black;
+    margin: 10px;
 }
-h1 {
+*, html {
+    margin: 0;
+    padding: 0;
+}
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
     text-align: center;
+}
+.intro h1 {
+    color: white;
+}
+.intro h2 {
+    color: white;
+}
+.intro p{
+    color: white;
+    text-align: left;
+}
+#intro_text {
+    height: fit-content;
+    width: 70vw;
+    padding: 20px;
+    margin: 10px;
+}
+
+@media (min-width: 1090px) {
+    .intro {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-image: url(assets/header_bg.jpeg);
+        background-size: 100% 100%;
+        height: 100vh;
+        padding: 20px;
+        text-align: left;
+    }
+    #intro_text {
+        height: fit-content;
+        width: 60vw;
+    }
+    
+}
+
+header {
+    display: flexbox;
+    padding-top: 10px;
+    background-image: url(assets/header_bg.jpeg);
+    background-size: 100% 100%;
+    height: 100vh;
 }
