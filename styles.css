@@ -191,7 +191,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 20px;
     padding-top: 40px;
 }
@@ -205,3 +205,31 @@ h2, h4, h5, h6, p, li {
     display:inline;
     cursor: pointer;
 }
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-github {
+      color: black;
+  }
+  .fa-instagram {
+      color: #cc0066;
+  }
