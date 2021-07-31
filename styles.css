@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:wght@500&family=Open+Sans+Condensed:wght@300&display=swap');
 
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    vertical-align: baseline;
+}
+
+/*---Home Section---*/
 #navBar {
     display: flex;
+    position: fixed;
     justify-content: space-evenly;
     align-items: center;
     background-color: #f2f2f2;
@@ -34,21 +44,20 @@
     margin-right: auto;
     padding-left: 20px;
 }
-button {
+#navBar button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    background-color: rgba(21, 178, 218, 0.5);
     padding: 0px 20px;
     margin-left: auto;
     margin-right: 20px;
-    border: none;
+    border: rgba(6, 247, 227, 1);
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3 ease 0s; 
 }
-button:hover {
-    background-color: rgba(21, 178, 218, 1);
+#navBar button:hover {
+    background-color: rgba(6, 118, 247, 0.904);
 }
 #lastButton {
     margin-right: 3px;
@@ -61,10 +70,6 @@ button:hover {
     border: 10px;
     border-color: black;
     margin: 10px;
-}
-*, html {
-    margin: 0;
-    padding: 0;
 }
 .intro {
     display: flex;
@@ -114,8 +119,117 @@ button:hover {
 
 header {
     display: flexbox;
+    margin: 0;
     padding-top: 10px;
     background-image: url(assets/header_bg.jpeg);
     background-size: 100% 100%;
     height: 100vh;
 }
+
+/*---Education Section---*/
+/*
+#educationDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    background-image: url(assets/finalbg.svg);
+    background-size: 100% 100%;
+}
+
+.card-box {
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: fit-content;
+}
+
+.hide li{
+    display: none;
+}
+.box p:hover + .hide li{
+    display: inline-block;
+}
+*/
+/*---Projects Section---*/
+/*
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.card-box {
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: fit-content;
+}
+.contacts {
+    justify-content: space-evenly;
+    align-items: center;
+}
+*/
+#info {
+    background-image: url(assets/header_bg.jpeg);
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+#educationDiv, #projects {
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+h2, h4, h5, h6, p, li {
+    color: white;
+}
+.hide {
+    display: none;
+}
+.box a:hover + .hide{
+    display:inline;
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-github {
+      color: black;
+  }
+  .fa-instagram {
+      color: #cc0066;
+  }
