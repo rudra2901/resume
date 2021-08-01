@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:wght@500&family=Open+Sans+Condensed:wght@300&display=swap');
 
-html {
+body, html {
     margin: 0;
     padding: 0;
     border: 0;
     overflow-x: hidden;
     vertical-align: baseline;
+    background-color: deepskyblue;
 }
 
 /*---Home Section---*/
@@ -26,7 +27,7 @@ html {
 @media (max-width: 700px) {
     #navBar {
         display: none;
-        position: absolute;
+        position: fixed;
         justify-content: space-evenly;
         align-items: center;
         background-color: #f2f2f2;
@@ -126,78 +127,12 @@ header {
     height: 100vh;
 }
 
-/*---Education Section---*/
-/*
-#educationDiv {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    background-image: url(assets/finalbg.svg);
-    background-size: 100% 100%;
-}
-
-.card-box {
-    display: flex;
-    
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
-    width: fit-content;
-}
-
-.hide li{
-    display: none;
-}
-.box p:hover + .hide li{
-    display: inline-block;
-}
-*/
-/*---Projects Section---*/
-/*
-#projects {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-}
-.card-box {
-    display: flex;
-    
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
-    width: fit-content;
-}
-.contacts {
-    justify-content: space-evenly;
-    align-items: center;
-}
-*/
 #info {
-    background-image: url(assets/header_bg.jpeg);
+    margin: 20px;
     background-size: 100% 100%;
     margin: 0;
 }
 
-#educationDiv, #projects {
-    display: flexbox;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
-    padding-top: 40px;
-}
-h2, h4, h5, h6, p, li {
-    color: white;
-}
 .hide {
     display: none;
 }
@@ -220,16 +155,47 @@ h2, h4, h5, h6, p, li {
     width: 50px;
     text-align: center;
     text-decoration: none;
-  }
+}
   
-  /* Add a hover effect if you want */
-  .fa:hover {
+.fa:hover {
     opacity: 0.7;
-  }
+}
 
-  .fa-github {
+.fa-github {
       color: black;
-  }
-  .fa-instagram {
+}
+.fa-instagram {
       color: #cc0066;
+}
+.education, .projectCard, .courses {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 50vw;
+      background-color: floralwhite;
+      margin: 20px;
+      padding: 30px;
+      border-radius: 50px;
   }
+h2, h4, h5, h6, p, li {
+    color: black;
+}
+.skills, .hobby, .contact {
+    margin: 20px;
+    padding: 30px;
+    border-radius: 50px;
+    width: 30vw;
+    background: #231fd6;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    background: #31d7dd;
+    margin: 10px;
+    padding: 10px;
+    border:black;
+    border-radius: 30px;
+    width: fit-content;
+}
